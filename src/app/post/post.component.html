@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success':getColor()==='green',
+'list-group-item-danger' : getColor()==='red'
+}" >
+
+  <h4 > {{title}}  {{ lastUpdate | async | date: '   EEEE  d MMMM   y       HH:mm'}}
+  </h4>
+  <h5>{{content}}</h5>
+  <button class="btn btn-success"
+          (click)="onAllumer()"> like it </button> <button class="btn btn-success"
+                                           (click)="onAllumer1()" style="background-color: red;">dislike</button>
+
+</li>
+    </div>
+  </div>
+</div>

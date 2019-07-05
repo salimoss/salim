@@ -1,0 +1,12 @@
+<div class="container">
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Poste</h2>
+    <ul class="list-group">
+      <app-post *ngFor="let post of post"[title]="post.title" [content]="post.content" >
+
+      </app-post>
+    </ul>
+  </div>
+</div>
+</div>
